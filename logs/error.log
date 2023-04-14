@@ -1,0 +1,228 @@
+[2023-04-12 10:43:43 +0800] [4012] [INFO] Starting gunicorn 20.1.0
+[2023-04-12 10:43:43 +0800] [4012] [INFO] Listening at: http://0.0.0.0:5000 (4012)
+[2023-04-12 10:43:43 +0800] [4012] [INFO] Using worker: sync
+[2023-04-12 10:43:43 +0800] [4014] [INFO] Booting worker with pid: 4014
+[2023-04-12 10:43:43 +0800] [4015] [INFO] Booting worker with pid: 4015
+[2023-04-12 10:43:43 +0800] [4016] [INFO] Booting worker with pid: 4016
+[2023-04-12 10:43:43 +0800] [4017] [INFO] Booting worker with pid: 4017
+[2023-04-12 10:43:53 +0800] [4020] [INFO] Starting gunicorn 20.1.0
+[2023-04-12 10:43:53 +0800] [4020] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2023-04-12 10:43:53 +0800] [4020] [ERROR] Retrying in 1 second.
+[2023-04-12 10:43:54 +0800] [4020] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2023-04-12 10:43:54 +0800] [4020] [ERROR] Retrying in 1 second.
+[2023-04-12 10:43:55 +0800] [4020] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2023-04-12 10:43:55 +0800] [4020] [ERROR] Retrying in 1 second.
+[2023-04-12 10:43:56 +0800] [4020] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2023-04-12 10:43:56 +0800] [4020] [ERROR] Retrying in 1 second.
+[2023-04-12 10:43:57 +0800] [4020] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2023-04-12 10:43:57 +0800] [4020] [ERROR] Retrying in 1 second.
+[2023-04-12 10:43:58 +0800] [4020] [ERROR] Can't connect to ('0.0.0.0', 5000)
+[2023-04-12 10:46:18 +0800] [4071] [INFO] Starting gunicorn 20.1.0
+[2023-04-12 10:46:18 +0800] [4071] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2023-04-12 10:46:18 +0800] [4071] [ERROR] Retrying in 1 second.
+[2023-04-12 10:46:19 +0800] [4071] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2023-04-12 10:46:19 +0800] [4071] [ERROR] Retrying in 1 second.
+[2023-04-12 10:46:20 +0800] [4071] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2023-04-12 10:46:20 +0800] [4071] [ERROR] Retrying in 1 second.
+[2023-04-12 10:46:21 +0800] [4071] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2023-04-12 10:46:21 +0800] [4071] [ERROR] Retrying in 1 second.
+[2023-04-12 10:46:22 +0800] [4071] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2023-04-12 10:46:22 +0800] [4071] [ERROR] Retrying in 1 second.
+[2023-04-12 10:46:23 +0800] [4071] [ERROR] Can't connect to ('0.0.0.0', 5000)
+[2023-04-12 10:46:30,623] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 57, in upload_file
+    image_path, current_app.model, file.filename.rsplit('.', 1)[1])
+AttributeError: 'Flask' object has no attribute 'model'
+[2023-04-12 16:34:15 +0800] [2065] [INFO] Starting gunicorn 20.1.0
+[2023-04-12 16:34:15 +0800] [2065] [INFO] Listening at: http://0.0.0.0:5000 (2065)
+[2023-04-12 16:34:15 +0800] [2065] [INFO] Using worker: sync
+[2023-04-12 16:34:15 +0800] [2068] [INFO] Booting worker with pid: 2068
+[2023-04-12 16:34:16 +0800] [2069] [INFO] Booting worker with pid: 2069
+[2023-04-12 16:34:16 +0800] [2070] [INFO] Booting worker with pid: 2070
+[2023-04-12 16:34:16 +0800] [2071] [INFO] Booting worker with pid: 2071
+[2023-04-12 16:34:36,045] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 57, in upload_file
+    image_path, current_app.model, file.filename.rsplit('.', 1)[1])
+AttributeError: 'Flask' object has no attribute 'model'
+[2023-04-12 16:35:00,994] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 57, in upload_file
+    image_path, current_app.model, file.filename.rsplit('.', 1)[1])
+AttributeError: 'Flask' object has no attribute 'model'
+[2023-04-12 17:15:04,513] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 57, in upload_file
+    image_path, current_app.model, file.filename.rsplit('.', 1)[1])
+AttributeError: 'Flask' object has no attribute 'model'
+[2023-04-12 17:21:24,744] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 57, in upload_file
+    image_path, current_app.model, file.filename.rsplit('.', 1)[1])
+AttributeError: 'Flask' object has no attribute 'model'
+[2023-04-12 17:33:46,599] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 57, in upload_file
+    image_path, current_app.model, file.filename.rsplit('.', 1)[1])
+AttributeError: 'Flask' object has no attribute 'model'
+[2023-04-12 17:39:19,846] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 57, in upload_file
+    image_path, current_app.model, file.filename.rsplit('.', 1)[1])
+AttributeError: 'Flask' object has no attribute 'model'
+[2023-04-12 17:41:52,947] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 57, in upload_file
+    image_path, current_app.models, file.filename.rsplit('.', 1)[1])
+AttributeError: 'Flask' object has no attribute 'model'
+[2023-04-12 17:43:33,050] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 57, in upload_file
+    image_path, current_app.models, file.filename.rsplit('.', 1)[1])
+AttributeError: 'Flask' object has no attribute 'model'
+[2023-04-12 17:44:31,960] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 57, in upload_file
+    image_path, current_app.model, file.filename.rsplit('.', 1)[1])
+AttributeError: 'Flask' object has no attribute 'model'
+[2023-04-12 19:43:44,142] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 57, in upload_file
+    image_path, app.model, file.filename.rsplit('.', 1)[1])
+AttributeError: 'Flask' object has no attribute 'model'
+[2023-04-12 19:54:20,580] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 57, in upload_file
+    image_path, current_app.model, file.filename.rsplit('.', 1)[1])
+AttributeError: 'Flask' object has no attribute 'model'
+[2023-04-12 20:13:05 +0800] [2065] [INFO] Handling signal: term
+[2023-04-12 20:13:05 +0800] [2068] [INFO] Worker exiting (pid: 2068)
+[2023-04-12 20:13:05 +0800] [2069] [INFO] Worker exiting (pid: 2069)
+[2023-04-12 20:13:05 +0800] [2071] [INFO] Worker exiting (pid: 2071)
+[2023-04-12 20:13:05 +0800] [2070] [INFO] Worker exiting (pid: 2070)
+[2023-04-12 20:13:05 +0800] [2065] [WARNING] Worker with pid 2071 was terminated due to signal 15
+[2023-04-12 20:13:05 +0800] [2065] [WARNING] Worker with pid 2069 was terminated due to signal 15
+[2023-04-12 20:13:05 +0800] [2065] [WARNING] Worker with pid 2070 was terminated due to signal 15
+[2023-04-12 20:13:05 +0800] [2065] [WARNING] Worker with pid 2068 was terminated due to signal 15
+[2023-04-12 20:13:05 +0800] [2065] [INFO] Shutting down: Master

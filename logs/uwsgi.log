@@ -1,0 +1,918 @@
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr 12 20:17:03 2023] ***
+compiled with version: 9.4.0 on 12 April 2023 12:13:55
+os: Linux-5.4.0-137-generic #154-Ubuntu SMP Thu Jan 5 17:03:22 UTC 2023
+nodename: iZkiby8u2xguwqZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/detection
+writing pidfile to /var/run/uwsgi.pid
+detected binary path: /root/.virtualenvs/Detection_env/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/detection
+your processes number limit is 7700
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:5000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:35479 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 14 2022, 12:59:47)  [GCC 9.4.0]
+PEP 405 virtualenv detected: /root/.virtualenvs/Detection_env
+Set PythonHome to /root/.virtualenvs/Detection_env
+Python main interpreter initialized at 0x559ceb551740
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x559ceb551740 pid: 5540 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5540)
+spawned uWSGI worker 1 (pid: 5542, cores: 2)
+spawned uWSGI worker 2 (pid: 5543, cores: 2)
+spawned uWSGI worker 3 (pid: 5544, cores: 2)
+spawned uWSGI worker 4 (pid: 5545, cores: 2)
+spawned uWSGI http 1 (pid: 5549)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr 12 20:18:07 2023] ***
+compiled with version: 9.4.0 on 12 April 2023 12:13:55
+os: Linux-5.4.0-137-generic #154-Ubuntu SMP Thu Jan 5 17:03:22 UTC 2023
+nodename: iZkiby8u2xguwqZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/detection
+writing pidfile to /var/run/uwsgi.pid
+detected binary path: /root/.virtualenvs/Detection_env/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/detection
+your processes number limit is 7700
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:5000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:35819 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 14 2022, 12:59:47)  [GCC 9.4.0]
+PEP 405 virtualenv detected: /root/.virtualenvs/Detection_env
+Set PythonHome to /root/.virtualenvs/Detection_env
+Python main interpreter initialized at 0x5601de46f610
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5601de46f610 pid: 5573 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5573)
+spawned uWSGI worker 1 (pid: 5578, cores: 2)
+spawned uWSGI worker 2 (pid: 5579, cores: 2)
+spawned uWSGI worker 3 (pid: 5580, cores: 2)
+spawned uWSGI worker 4 (pid: 5581, cores: 2)
+spawned uWSGI http 1 (pid: 5586)
+2023-04-12 20:18:46.418376 orange.jpg
+[2023-04-12 20:18:46,420] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 57, in upload_file
+    image_path, current_app.model, file.filename.rsplit('.', 1)[1])
+AttributeError: 'Flask' object has no attribute 'model'
+[pid: 5579|app: 0|req: 1/1] 112.224.166.109 () {42 vars in 754 bytes} [Wed Apr 12 20:18:46 2023] POST /upload => generated 265 bytes in 148 msecs (HTTP/1.1 500) 6 headers in 269 bytes (7 switches on core 0)
+2023-04-12 20:19:18.570250 orange01.jpg
+[2023-04-12 20:19:18,571] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 57, in upload_file
+    image_path, current_app.model, file.filename.rsplit('.', 1)[1])
+AttributeError: 'Flask' object has no attribute 'model'
+[pid: 5579|app: 0|req: 2/2] 112.224.166.109 () {42 vars in 754 bytes} [Wed Apr 12 20:19:18 2023] POST /upload => generated 265 bytes in 113 msecs (HTTP/1.1 500) 6 headers in 269 bytes (7 switches on core 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr 12 20:25:24 2023] ***
+compiled with version: 9.4.0 on 12 April 2023 12:13:55
+os: Linux-5.4.0-137-generic #154-Ubuntu SMP Thu Jan 5 17:03:22 UTC 2023
+nodename: iZkiby8u2xguwqZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/detection
+writing pidfile to /var/run/uwsgi.pid
+detected binary path: /root/.virtualenvs/Detection_env/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/detection
+your processes number limit is 7700
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:5000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:34183 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 14 2022, 12:59:47)  [GCC 9.4.0]
+PEP 405 virtualenv detected: /root/.virtualenvs/Detection_env
+Set PythonHome to /root/.virtualenvs/Detection_env
+Python main interpreter initialized at 0x55ddfaa82610
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55ddfaa82610 pid: 5723 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5723)
+spawned uWSGI worker 1 (pid: 5728, cores: 2)
+spawned uWSGI worker 2 (pid: 5729, cores: 2)
+spawned uWSGI worker 3 (pid: 5730, cores: 2)
+spawned uWSGI worker 4 (pid: 5731, cores: 2)
+spawned uWSGI http 1 (pid: 5734)
+2023-04-12 20:25:52.169288 farmers.jpg
+[2023-04-12 20:25:52,170] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 58, in upload_file
+    image_path, app.model, file.filename.rsplit('.', 1)[1])
+AttributeError: 'Flask' object has no attribute 'model'
+[pid: 5730|app: 0|req: 1/1] 112.224.166.109 () {42 vars in 755 bytes} [Wed Apr 12 20:25:52 2023] POST /upload => generated 265 bytes in 125 msecs (HTTP/1.1 500) 6 headers in 269 bytes (11 switches on core 0)
+2023-04-12 20:37:31.218756 farmers.jpg
+[2023-04-12 20:37:31,219] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 58, in upload_file
+AttributeError: 'Flask' object has no attribute 'model'
+[pid: 5730|app: 0|req: 2/2] 112.224.166.109 () {42 vars in 755 bytes} [Wed Apr 12 20:37:31 2023] POST /upload => generated 265 bytes in 162 msecs (HTTP/1.1 500) 6 headers in 269 bytes (12 switches on core 1)
+[2023-04-12 20:37:39,207] ERROR in app: Exception on /tmp/ct/{pid [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 78, in show_photo
+    'uploads', 'tmp/ct', 'tmp/draw',
+FileNotFoundError: [Errno 2] No such file or directory: 'tmp/ct/{pid'
+[pid: 5731|app: 0|req: 1/3] 140.207.178.85 () {32 vars in 513 bytes} [Wed Apr 12 20:37:39 2023] GET /tmp/ct/{pid => generated 265 bytes in 9 msecs (HTTP/1.1 500) 6 headers in 269 bytes (1 switches on core 0)
+[2023-04-12 20:37:39,470] ERROR in app: Exception on /tmp/draw/{pid [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 78, in show_photo
+    'uploads', 'tmp/ct', 'tmp/draw',
+FileNotFoundError: [Errno 2] No such file or directory: 'tmp/draw/{pid'
+[pid: 5731|app: 0|req: 2/4] 140.207.188.18 () {32 vars in 518 bytes} [Wed Apr 12 20:37:39 2023] GET /tmp/draw/{pid => generated 265 bytes in 1 msecs (HTTP/1.1 500) 6 headers in 269 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr 12 20:40:13 2023] ***
+compiled with version: 9.4.0 on 12 April 2023 12:13:55
+os: Linux-5.4.0-137-generic #154-Ubuntu SMP Thu Jan 5 17:03:22 UTC 2023
+nodename: iZkiby8u2xguwqZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/detection
+writing pidfile to /var/run/uwsgi.pid
+detected binary path: /root/.virtualenvs/Detection_env/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/detection
+your processes number limit is 7700
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:5000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:34451 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 14 2022, 12:59:47)  [GCC 9.4.0]
+PEP 405 virtualenv detected: /root/.virtualenvs/Detection_env
+Set PythonHome to /root/.virtualenvs/Detection_env
+Python main interpreter initialized at 0x55950cb63610
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55950cb63610 pid: 5952 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5952)
+spawned uWSGI worker 1 (pid: 5957, cores: 2)
+spawned uWSGI worker 2 (pid: 5958, cores: 2)
+spawned uWSGI worker 3 (pid: 5959, cores: 2)
+spawned uWSGI worker 4 (pid: 5962, cores: 2)
+spawned uWSGI http 1 (pid: 5964)
+2023-04-12 20:40:49.362303 apple.jpg
+[2023-04-12 20:40:49,364] ERROR in app: Exception on /upload [POST]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/Detection_env/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/srv/detection/app.py", line 60, in upload_file
+    image_path, current_app.model, file.filename.rsplit('.', 1)[1])
+AttributeError: 'Flask' object has no attribute 'model'
+[pid: 5958|app: 0|req: 1/1] 112.224.166.109 () {42 vars in 755 bytes} [Wed Apr 12 20:40:49 2023] POST /upload => generated 265 bytes in 219 msecs (HTTP/1.1 500) 6 headers in 269 bytes (26 switches on core 0)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr 12 20:48:03 2023] ***
+compiled with version: 9.4.0 on 12 April 2023 12:13:55
+os: Linux-5.4.0-137-generic #154-Ubuntu SMP Thu Jan 5 17:03:22 UTC 2023
+nodename: iZkiby8u2xguwqZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/detection
+writing pidfile to /var/run/uwsgi.pid
+detected binary path: /root/.virtualenvs/Detection_env/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/detection
+your processes number limit is 7700
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:5000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:40523 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 14 2022, 12:59:47)  [GCC 9.4.0]
+PEP 405 virtualenv detected: /root/.virtualenvs/Detection_env
+Set PythonHome to /root/.virtualenvs/Detection_env
+Python main interpreter initialized at 0x55f8d967e610
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55f8d967e610 pid: 6051 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6051)
+spawned uWSGI worker 1 (pid: 6056, cores: 2)
+spawned uWSGI worker 2 (pid: 6057, cores: 2)
+spawned uWSGI worker 3 (pid: 6058, cores: 2)
+spawned uWSGI worker 4 (pid: 6059, cores: 2)
+spawned uWSGI http 1 (pid: 6062)
+2023-04-12 20:48:22.812717 farmers.jpg
+Fusing layers... 
+./tmp/ct/farmers.jpg
+farmers
+[pid: 6058|app: 0|req: 1/1] 112.224.166.109 () {42 vars in 755 bytes} [Wed Apr 12 20:48:22 2023] POST /upload => generated 384 bytes in 2534 msecs (HTTP/1.1 200) 6 headers in 242 bytes (13 switches on core 0)
+[pid: 6058|app: 0|req: 2/2] 112.224.166.109 () {36 vars in 641 bytes} [Wed Apr 12 20:48:25 2023] GET /tmp/ct/farmers.jpg => generated 143427 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 1)
+[pid: 6059|app: 0|req: 1/3] 112.224.166.109 () {36 vars in 645 bytes} [Wed Apr 12 20:48:25 2023] GET /tmp/draw/farmers.jpg => generated 158218 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 0)
+2023-04-12 20:49:58.929963 orange01.jpg
+Fusing layers... 
+./tmp/ct/orange01.jpg
+orange01
+[pid: 6058|app: 0|req: 3/4] 112.224.166.109 () {42 vars in 754 bytes} [Wed Apr 12 20:49:58 2023] POST /upload => generated 560 bytes in 1681 msecs (HTTP/1.1 200) 6 headers in 242 bytes (6 switches on core 1)
+[pid: 6059|app: 0|req: 2/5] 112.224.166.109 () {36 vars in 643 bytes} [Wed Apr 12 20:50:00 2023] GET /tmp/ct/orange01.jpg => generated 78587 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 237 bytes (1 switches on core 1)
+[pid: 6057|app: 0|req: 1/6] 112.224.166.109 () {36 vars in 647 bytes} [Wed Apr 12 20:50:00 2023] GET /tmp/draw/orange01.jpg => generated 202428 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr 12 20:51:59 2023] ***
+compiled with version: 9.4.0 on 12 April 2023 12:13:55
+os: Linux-5.4.0-137-generic #154-Ubuntu SMP Thu Jan 5 17:03:22 UTC 2023
+nodename: iZkiby8u2xguwqZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/detection
+writing pidfile to /var/run/uwsgi.pid
+detected binary path: /root/.virtualenvs/Detection_env/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/detection
+your processes number limit is 7700
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:5000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:37905 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 14 2022, 12:59:47)  [GCC 9.4.0]
+PEP 405 virtualenv detected: /root/.virtualenvs/Detection_env
+Set PythonHome to /root/.virtualenvs/Detection_env
+Python main interpreter initialized at 0x563aae476610
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x563aae476610 pid: 6128 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6128)
+spawned uWSGI worker 1 (pid: 6133, cores: 2)
+spawned uWSGI worker 2 (pid: 6134, cores: 2)
+spawned uWSGI worker 3 (pid: 6135, cores: 2)
+spawned uWSGI worker 4 (pid: 6137, cores: 2)
+spawned uWSGI http 1 (pid: 6138)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr 12 20:55:06 2023] ***
+compiled with version: 9.4.0 on 12 April 2023 12:13:55
+os: Linux-5.4.0-137-generic #154-Ubuntu SMP Thu Jan 5 17:03:22 UTC 2023
+nodename: iZkiby8u2xguwqZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/detection
+writing pidfile to /var/run/uwsgi.pid
+detected binary path: /root/.virtualenvs/Detection_env/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/detection
+your processes number limit is 7700
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:5000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:46747 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 14 2022, 12:59:47)  [GCC 9.4.0]
+PEP 405 virtualenv detected: /root/.virtualenvs/Detection_env
+Set PythonHome to /root/.virtualenvs/Detection_env
+Python main interpreter initialized at 0x55a497c72610
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x55a497c72610 pid: 6203 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6203)
+spawned uWSGI worker 1 (pid: 6208, cores: 2)
+spawned uWSGI worker 2 (pid: 6209, cores: 2)
+spawned uWSGI worker 3 (pid: 6210, cores: 2)
+spawned uWSGI worker 4 (pid: 6211, cores: 2)
+spawned uWSGI http 1 (pid: 6212)
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Apr 12 21:06:25 2023] ***
+compiled with version: 9.4.0 on 12 April 2023 12:13:55
+os: Linux-5.4.0-137-generic #154-Ubuntu SMP Thu Jan 5 17:03:22 UTC 2023
+nodename: iZkiby8u2xguwqZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/detection
+writing pidfile to /var/run/uwsgi.pid
+detected binary path: /root/.virtualenvs/Detection_env/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/detection
+your processes number limit is 7700
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:5000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:36737 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 14 2022, 12:59:47)  [GCC 9.4.0]
+PEP 405 virtualenv detected: /root/.virtualenvs/Detection_env
+Set PythonHome to /root/.virtualenvs/Detection_env
+Python main interpreter initialized at 0x55de9441d610
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x55de9441d610 pid: 6370 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6370)
+spawned uWSGI worker 1 (pid: 6375, cores: 2)
+spawned uWSGI worker 2 (pid: 6376, cores: 2)
+spawned uWSGI worker 3 (pid: 6377, cores: 2)
+spawned uWSGI worker 4 (pid: 6381, cores: 2)
+spawned uWSGI http 1 (pid: 6383)
+2023-04-12 21:07:43.288639 apple.jpg
+Fusing layers... 
+./tmp/ct/apple.jpg
+apple
+[pid: 6381|app: 0|req: 1/1] 112.224.166.109 () {42 vars in 755 bytes} [Wed Apr 12 21:07:43 2023] POST /upload => generated 341 bytes in 1947 msecs (HTTP/1.1 200) 6 headers in 242 bytes (37 switches on core 0)
+[pid: 6381|app: 0|req: 2/2] 112.224.166.109 () {36 vars in 641 bytes} [Wed Apr 12 21:07:45 2023] GET /tmp/draw/apple.jpg => generated 405315 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 1)
+[pid: 6377|app: 0|req: 1/3] 112.224.166.109 () {36 vars in 636 bytes} [Wed Apr 12 21:07:45 2023] GET /tmp/ct/apple.jpg => generated 502207 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 0)
+2023-04-12 21:13:14.119685 farmers.jpg
+Fusing layers... 
+./tmp/ct/farmers.jpg
+farmers
+[pid: 6381|app: 0|req: 3/4] 112.224.166.109 () {42 vars in 755 bytes} [Wed Apr 12 21:13:13 2023] POST /upload => generated 384 bytes in 1554 msecs (HTTP/1.1 200) 6 headers in 242 bytes (7 switches on core 1)
+[pid: 6377|app: 0|req: 2/5] 112.224.166.109 () {36 vars in 641 bytes} [Wed Apr 12 21:13:15 2023] GET /tmp/ct/farmers.jpg => generated 143427 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 1)
+[pid: 6376|app: 0|req: 1/6] 112.224.166.109 () {36 vars in 645 bytes} [Wed Apr 12 21:13:15 2023] GET /tmp/draw/farmers.jpg => generated 156490 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 0)
+2023-04-12 21:16:58.400482 farmers.jpg
+Fusing layers... 
+./tmp/ct/farmers.jpg
+farmers
+[pid: 6381|app: 0|req: 4/7] 112.224.166.109 () {42 vars in 757 bytes} [Wed Apr 12 21:16:58 2023] POST /upload => generated 384 bytes in 1569 msecs (HTTP/1.1 200) 6 headers in 242 bytes (12 switches on core 0)
+[pid: 6381|app: 0|req: 5/8] 112.224.166.109 () {36 vars in 646 bytes} [Wed Apr 12 21:16:59 2023] GET /tmp/draw/farmers.jpg => generated 159594 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 1)
+[pid: 6377|app: 0|req: 3/9] 112.224.166.109 () {36 vars in 642 bytes} [Wed Apr 12 21:16:59 2023] GET /tmp/ct/farmers.jpg => generated 143427 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 0)
+2023-04-12 21:17:19.670404 orange.jpg
+Fusing layers... 
+./tmp/ct/orange.jpg
+orange
+[pid: 6375|app: 0|req: 1/10] 112.224.166.109 () {42 vars in 756 bytes} [Wed Apr 12 21:17:19 2023] POST /upload => generated 283 bytes in 1652 msecs (HTTP/1.1 200) 6 headers in 242 bytes (6 switches on core 0)
+[pid: 6381|app: 0|req: 6/11] 112.224.166.109 () {36 vars in 640 bytes} [Wed Apr 12 21:17:21 2023] GET /tmp/ct/orange.jpg => generated 75569 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 237 bytes (1 switches on core 1)
+[pid: 6375|app: 0|req: 2/12] 112.224.166.109 () {36 vars in 644 bytes} [Wed Apr 12 21:17:21 2023] GET /tmp/draw/orange.jpg => generated 173110 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 1)
+2023-04-12 23:45:59.870250 orange01.jpg
+Fusing layers... 
+./tmp/ct/orange01.jpg
+orange01
+[pid: 6377|app: 0|req: 4/13] 112.224.166.109 () {42 vars in 756 bytes} [Wed Apr 12 23:45:59 2023] POST /upload => generated 560 bytes in 1709 msecs (HTTP/1.1 200) 6 headers in 242 bytes (5 switches on core 1)
+[pid: 6381|app: 0|req: 7/14] 112.224.166.109 () {36 vars in 644 bytes} [Wed Apr 12 23:46:01 2023] GET /tmp/ct/orange01.jpg => generated 78587 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 237 bytes (1 switches on core 0)
+[pid: 6375|app: 0|req: 3/15] 112.224.166.109 () {36 vars in 648 bytes} [Wed Apr 12 23:46:01 2023] GET /tmp/draw/orange01.jpg => generated 201605 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 1)
+2023-04-13 00:01:04.409896 orange.jpg
+Fusing layers... 
+./tmp/ct/orange.jpg
+orange
+[pid: 6381|app: 0|req: 8/16] 112.224.166.109 () {42 vars in 756 bytes} [Thu Apr 13 00:01:04 2023] POST /upload => generated 283 bytes in 1520 msecs (HTTP/1.1 200) 6 headers in 242 bytes (5 switches on core 1)
+[pid: 6381|app: 0|req: 9/17] 112.224.166.109 () {36 vars in 640 bytes} [Thu Apr 13 00:01:05 2023] GET /tmp/ct/orange.jpg => generated 75569 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 237 bytes (1 switches on core 0)
+[pid: 6376|app: 0|req: 2/18] 112.224.166.109 () {36 vars in 644 bytes} [Thu Apr 13 00:01:05 2023] GET /tmp/draw/orange.jpg => generated 172349 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 1)
+[pid: 6381|app: 0|req: 10/19] 47.92.70.66 () {28 vars in 481 bytes} [Thu Apr 13 01:59:20 2023] GET http://120.27.20.215:5000/ => generated 207 bytes in 21 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 0)
+[pid: 6381|app: 0|req: 11/20] 89.248.165.52 () {24 vars in 286 bytes} [Thu Apr 13 04:08:14 2023] CONNECT smtp.aol.com:25 => generated 207 bytes in 2 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 1)
+[pid: 6381|app: 0|req: 12/21] 89.248.165.52 () {24 vars in 291 bytes} [Thu Apr 13 04:47:14 2023] CONNECT 85.206.160.115:80 => generated 207 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 0)
+[uwsgi-http key:  client_addr: 167.248.133.50 client_port: 60111] hr_read(): Connection reset by peer [plugins/http/http.c line 918]
+[pid: 6381|app: 0|req: 13/22] 167.248.133.50 () {24 vars in 258 bytes} [Thu Apr 13 06:40:50 2023] GET / => generated 227 bytes in 11 msecs (HTTP/1.1 302) 7 headers in 285 bytes (1 switches on core 0)
+[pid: 6381|app: 0|req: 14/23] 167.248.133.50 () {30 vars in 393 bytes} [Thu Apr 13 06:40:51 2023] GET / => generated 227 bytes in 0 msecs (HTTP/1.1 302) 7 headers in 285 bytes (1 switches on core 1)
+[pid: 6376|app: 0|req: 3/24] 167.248.133.50 () {22 vars in 226 bytes} [Thu Apr 13 06:40:51 2023] PRI * => generated 207 bytes in 33 msecs (HTTP/2.0 404) 6 headers in 257 bytes (1 switches on core 0)
+[pid: 6381|app: 0|req: 15/25] 167.248.133.50 () {30 vars in 429 bytes} [Thu Apr 13 06:40:52 2023] GET /static/./index.html => generated 207 bytes in 11 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 1)
+[pid: 6375|app: 0|req: 4/26] 167.248.133.50 () {22 vars in 227 bytes} [Thu Apr 13 06:40:52 2023] PRI * => generated 207 bytes in 2 msecs (HTTP/2.0 404) 6 headers in 257 bytes (1 switches on core 0)
+[pid: 6381|app: 0|req: 16/27] 47.92.33.185 () {28 vars in 484 bytes} [Thu Apr 13 07:56:57 2023] GET http://120.27.20.215:5000/ => generated 207 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 0)
+2023-04-13 08:31:35.360203 farmers.jpg
+Fusing layers... 
+./tmp/ct/farmers.jpg
+farmers
+[pid: 6381|app: 0|req: 17/28] 112.224.195.14 () {42 vars in 754 bytes} [Thu Apr 13 08:31:35 2023] POST /upload => generated 384 bytes in 1811 msecs (HTTP/1.1 200) 6 headers in 242 bytes (11 switches on core 1)
+[pid: 6381|app: 0|req: 18/29] 112.224.195.14 () {36 vars in 644 bytes} [Thu Apr 13 08:31:37 2023] GET /tmp/draw/farmers.jpg => generated 160584 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 0)
+[pid: 6376|app: 0|req: 4/30] 112.224.195.14 () {36 vars in 640 bytes} [Thu Apr 13 08:31:37 2023] GET /tmp/ct/farmers.jpg => generated 143427 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 1)
+2023-04-13 08:47:01.981858 orange.jpg
+Fusing layers... 
+./tmp/ct/orange.jpg
+orange
+[pid: 6381|app: 0|req: 19/31] 112.224.195.14 () {42 vars in 753 bytes} [Thu Apr 13 08:47:01 2023] POST /upload => generated 283 bytes in 1534 msecs (HTTP/1.1 200) 6 headers in 242 bytes (10 switches on core 0)
+[pid: 6381|app: 0|req: 20/32] 112.224.195.14 () {36 vars in 642 bytes} [Thu Apr 13 08:47:03 2023] GET /tmp/draw/orange.jpg => generated 169568 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 1)
+[pid: 6377|app: 0|req: 5/33] 112.224.195.14 () {36 vars in 638 bytes} [Thu Apr 13 08:47:03 2023] GET /tmp/ct/orange.jpg => generated 75569 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 237 bytes (1 switches on core 0)
+Gracefully killing worker 1 (pid: 6375)...
+Gracefully killing worker 4 (pid: 6381)...
+Gracefully killing worker 3 (pid: 6377)...
+Gracefully killing worker 2 (pid: 6376)...
+gateway "uWSGI http 1" has been buried (pid: 6383)
+...gracefully killing workers...
+worker 1 buried after 5 seconds
+worker 2 buried after 5 seconds
+worker 3 buried after 5 seconds
+worker 4 buried after 5 seconds
+binary reloading uWSGI...
+chdir() to /srv/detection
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:36737)
+running /root/.virtualenvs/Detection_env/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Apr 13 08:52:10 2023] ***
+compiled with version: 9.4.0 on 12 April 2023 12:13:55
+os: Linux-5.4.0-137-generic #154-Ubuntu SMP Thu Jan 5 17:03:22 UTC 2023
+nodename: iZkiby8u2xguwqZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/detection
+detected binary path: /root/.virtualenvs/Detection_env/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/detection
+your processes number limit is 7700
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:5000 fd 5
+uwsgi socket 0 bound to TCP address 127.0.0.1:44863 (port auto-assigned) fd 4
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 14 2022, 12:59:47)  [GCC 9.4.0]
+PEP 405 virtualenv detected: /root/.virtualenvs/Detection_env
+Set PythonHome to /root/.virtualenvs/Detection_env
+Python main interpreter initialized at 0x5581d0b4e660
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x5581d0b4e660 pid: 6370 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 6370)
+spawned uWSGI worker 1 (pid: 15927, cores: 2)
+spawned uWSGI worker 2 (pid: 15928, cores: 2)
+spawned uWSGI worker 3 (pid: 15930, cores: 2)
+spawned uWSGI worker 4 (pid: 15931, cores: 2)
+spawned uWSGI http 1 (pid: 15935)
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Apr 13 08:55:53 2023] ***
+compiled with version: 9.4.0 on 12 April 2023 12:13:55
+os: Linux-5.4.0-137-generic #154-Ubuntu SMP Thu Jan 5 17:03:22 UTC 2023
+nodename: iZkiby8u2xguwqZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/detection
+writing pidfile to /var/run/uwsgi.pid
+detected binary path: /root/.virtualenvs/Detection_env/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/detection
+your processes number limit is 7700
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:5000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:42739 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 14 2022, 12:59:47)  [GCC 9.4.0]
+PEP 405 virtualenv detected: /root/.virtualenvs/Detection_env
+Set PythonHome to /root/.virtualenvs/Detection_env
+Python main interpreter initialized at 0x5624fd085600
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x5624fd085600 pid: 1998 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1998)
+spawned uWSGI worker 1 (pid: 2004, cores: 2)
+spawned uWSGI worker 2 (pid: 2005, cores: 2)
+spawned uWSGI worker 3 (pid: 2006, cores: 2)
+spawned uWSGI worker 4 (pid: 2007, cores: 2)
+spawned uWSGI http 1 (pid: 2011)
+2023-04-13 08:56:14.166718 orange.jpg
+Fusing layers... 
+./tmp/ct/orange.jpg
+orange
+[pid: 2004|app: 0|req: 1/1] 112.224.195.14 () {42 vars in 753 bytes} [Thu Apr 13 08:56:14 2023] POST /upload => generated 283 bytes in 2308 msecs (HTTP/1.1 200) 6 headers in 242 bytes (8 switches on core 0)
+[pid: 2004|app: 0|req: 2/2] 112.224.195.14 () {36 vars in 638 bytes} [Thu Apr 13 08:56:16 2023] GET /tmp/ct/orange.jpg => generated 75569 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 237 bytes (1 switches on core 1)
+[pid: 2007|app: 0|req: 1/3] 112.224.195.14 () {36 vars in 640 bytes} [Thu Apr 13 08:56:16 2023] GET /tmp/draw/orange.jpg => generated 169242 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 0)
+gateway "uWSGI http 1" has been buried (pid: 2011)
+...brutally killing workers...
+Gracefully killing worker 1 (pid: 2004)...
+Gracefully killing worker 2 (pid: 2005)...
+worker 2 buried after 1 seconds
+worker 1 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /srv/detection
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:42739)
+running /root/.virtualenvs/Detection_env/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Apr 13 09:00:42 2023] ***
+compiled with version: 9.4.0 on 12 April 2023 12:13:55
+os: Linux-5.4.0-137-generic #154-Ubuntu SMP Thu Jan 5 17:03:22 UTC 2023
+nodename: iZkiby8u2xguwqZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/detection
+detected binary path: /root/.virtualenvs/Detection_env/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/detection
+your processes number limit is 7700
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:5000 fd 5
+uwsgi socket 0 bound to TCP address 127.0.0.1:46171 (port auto-assigned) fd 4
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 14 2022, 12:59:47)  [GCC 9.4.0]
+PEP 405 virtualenv detected: /root/.virtualenvs/Detection_env
+Set PythonHome to /root/.virtualenvs/Detection_env
+Python main interpreter initialized at 0x55de741b5650
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x55de741b5650 pid: 1998 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1998)
+spawned uWSGI worker 1 (pid: 2234, cores: 2)
+spawned uWSGI worker 2 (pid: 2235, cores: 2)
+spawned uWSGI worker 3 (pid: 2236, cores: 2)
+spawned uWSGI worker 4 (pid: 2237, cores: 2)
+spawned uWSGI http 1 (pid: 2238)
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Apr 13 09:10:32 2023] ***
+compiled with version: 9.4.0 on 12 April 2023 12:13:55
+os: Linux-5.4.0-137-generic #154-Ubuntu SMP Thu Jan 5 17:03:22 UTC 2023
+nodename: iZkiby8u2xguwqZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/detection
+writing pidfile to /var/run/uwsgi.pid
+detected binary path: /root/.virtualenvs/Detection_env/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/detection
+your processes number limit is 7700
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:5000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:34201 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 14 2022, 12:59:47)  [GCC 9.4.0]
+PEP 405 virtualenv detected: /root/.virtualenvs/Detection_env
+Set PythonHome to /root/.virtualenvs/Detection_env
+Python main interpreter initialized at 0x55e1c680a600
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x55e1c680a600 pid: 2014 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2014)
+spawned uWSGI worker 1 (pid: 2020, cores: 2)
+spawned uWSGI worker 2 (pid: 2021, cores: 2)
+spawned uWSGI worker 3 (pid: 2022, cores: 2)
+spawned uWSGI worker 4 (pid: 2023, cores: 2)
+spawned uWSGI http 1 (pid: 2026)
+2023-04-13 09:10:48.259153 orange.jpg
+Fusing layers... 
+./tmp/ct/orange.jpg
+orange
+[pid: 2021|app: 0|req: 1/1] 112.224.195.14 () {42 vars in 753 bytes} [Thu Apr 13 09:10:48 2023] POST /upload => generated 283 bytes in 2302 msecs (HTTP/1.1 200) 6 headers in 242 bytes (11 switches on core 0)
+[pid: 2023|app: 0|req: 1/2] 112.224.195.14 () {36 vars in 637 bytes} [Thu Apr 13 09:10:50 2023] GET /tmp/ct/orange.jpg => generated 75569 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 237 bytes (1 switches on core 0)
+[pid: 2020|app: 0|req: 1/3] 112.224.195.14 () {36 vars in 642 bytes} [Thu Apr 13 09:10:50 2023] GET /tmp/draw/orange.jpg => generated 170156 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 0)
+Thu Apr 13 09:16:19 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Apr 13 09:16:19 2023] ***
+compiled with version: 9.4.0 on 12 April 2023 12:13:55
+os: Linux-5.4.0-137-generic #154-Ubuntu SMP Thu Jan 5 17:03:22 UTC 2023
+nodename: iZkiby8u2xguwqZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /srv/detection
+writing pidfile to /var/run/uwsgi.pid
+detected binary path: /root/.virtualenvs/Detection_env/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/detection
+your processes number limit is 7700
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:5000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:36529 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 14 2022, 12:59:47)  [GCC 9.4.0]
+PEP 405 virtualenv detected: /root/.virtualenvs/Detection_env
+Set PythonHome to /root/.virtualenvs/Detection_env
+Python main interpreter initialized at 0x557ae6235600
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x557ae6235600 pid: 2203 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2203)
+spawned uWSGI worker 1 (pid: 2208, cores: 2)
+spawned uWSGI worker 2 (pid: 2209, cores: 2)
+spawned uWSGI worker 3 (pid: 2210, cores: 2)
+spawned uWSGI worker 4 (pid: 2211, cores: 2)
+spawned uWSGI http 1 (pid: 2213)
+2023-04-13 09:16:46.027115 orange.jpg
+Fusing layers... 
+./tmp/ct/orange.jpg
+orange
+[pid: 2210|app: 0|req: 1/1] 112.224.195.14 () {42 vars in 753 bytes} [Thu Apr 13 09:16:45 2023] POST /upload => generated 283 bytes in 1589 msecs (HTTP/1.1 200) 6 headers in 242 bytes (9 switches on core 0)
+[pid: 2210|app: 0|req: 2/2] 112.224.195.14 () {36 vars in 641 bytes} [Thu Apr 13 09:16:47 2023] GET /tmp/draw/orange.jpg => generated 169804 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 1/3] 112.224.195.14 () {36 vars in 638 bytes} [Thu Apr 13 09:16:47 2023] GET /tmp/ct/orange.jpg => generated 75569 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 237 bytes (1 switches on core 0)
+2023-04-13 09:22:15.551720 apple.jpg
+Fusing layers... 
+./tmp/ct/apple.jpg
+apple
+[pid: 2211|app: 0|req: 2/4] 222.173.104.238 () {42 vars in 769 bytes} [Thu Apr 13 09:22:15 2023] POST /upload => generated 341 bytes in 2053 msecs (HTTP/1.1 200) 6 headers in 242 bytes (41 switches on core 1)
+[pid: 2210|app: 0|req: 3/5] 222.173.104.238 () {36 vars in 676 bytes} [Thu Apr 13 09:22:17 2023] GET /tmp/ct/apple.jpg => generated 502207 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 1)
+[pid: 2209|app: 0|req: 1/6] 222.173.104.238 () {36 vars in 680 bytes} [Thu Apr 13 09:22:17 2023] GET /tmp/draw/apple.jpg => generated 400974 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 0)
+2023-04-13 09:22:51.151787 apple.jpg
+Fusing layers... 
+./tmp/ct/apple.jpg
+apple
+[pid: 2209|app: 0|req: 2/7] 222.173.104.238 () {42 vars in 770 bytes} [Thu Apr 13 09:22:51 2023] POST /upload => generated 341 bytes in 1707 msecs (HTTP/1.1 200) 6 headers in 242 bytes (53 switches on core 1)
+2023-04-13 09:23:38.567626 apple.jpg
+Fusing layers... 
+./tmp/ct/apple.jpg
+apple
+[pid: 2211|app: 0|req: 3/8] 222.173.104.238 () {42 vars in 770 bytes} [Thu Apr 13 09:23:38 2023] POST /upload => generated 341 bytes in 2325 msecs (HTTP/1.1 200) 6 headers in 242 bytes (47 switches on core 0)
+[pid: 2211|app: 0|req: 4/9] 154.89.5.195 () {26 vars in 274 bytes} [Thu Apr 13 09:45:54 2023] GET / => generated 227 bytes in 1 msecs (HTTP/1.1 302) 7 headers in 285 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 5/10] 198.235.24.135 () {26 vars in 546 bytes} [Thu Apr 13 12:00:26 2023] GET / => generated 227 bytes in 1 msecs (HTTP/1.1 302) 7 headers in 285 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 6/11] 198.235.24.135 () {28 vars in 622 bytes} [Thu Apr 13 12:00:27 2023] GET /static/index.html => generated 207 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 7/12] 205.210.31.144 () {26 vars in 533 bytes} [Thu Apr 13 14:04:02 2023] GET / => generated 227 bytes in 1 msecs (HTTP/1.0 302) 7 headers in 285 bytes (1 switches on core 0)
+2023-04-13 14:51:15.414345 apple.jpg
+Fusing layers... 
+./tmp/ct/apple.jpg
+apple
+[pid: 2211|app: 0|req: 8/13] 222.173.104.238 () {42 vars in 733 bytes} [Thu Apr 13 14:51:15 2023] POST /upload => generated 275 bytes in 1831 msecs (HTTP/1.1 200) 6 headers in 242 bytes (5 switches on core 0)
+[pid: 2211|app: 0|req: 9/14] 222.173.104.238 () {36 vars in 641 bytes} [Thu Apr 13 14:51:17 2023] GET /tmp/ct/apple.jpg => generated 48167 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 237 bytes (1 switches on core 1)
+[pid: 2210|app: 0|req: 4/15] 222.173.104.238 () {36 vars in 645 bytes} [Thu Apr 13 14:51:17 2023] GET /tmp/draw/apple.jpg => generated 58814 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 237 bytes (1 switches on core 0)
+2023-04-13 15:07:23.561495 person.png
+Fusing layers... 
+./tmp/ct/person.png
+person
+libpng warning: iCCP: cHRM chunk does not match sRGB
+[pid: 2211|app: 0|req: 10/16] 222.173.104.238 () {42 vars in 734 bytes} [Thu Apr 13 15:07:23 2023] POST /upload => generated 318 bytes in 1624 msecs (HTTP/1.1 200) 6 headers in 242 bytes (21 switches on core 1)
+[pid: 2209|app: 0|req: 3/17] 222.173.104.238 () {36 vars in 647 bytes} [Thu Apr 13 15:07:25 2023] GET /tmp/draw/person.png => generated 915135 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 0)
+[pid: 2210|app: 0|req: 5/18] 222.173.104.238 () {36 vars in 643 bytes} [Thu Apr 13 15:07:25 2023] GET /tmp/ct/person.png => generated 891221 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 1)
+2023-04-13 15:08:15.309493 apple.jpg
+Fusing layers... 
+./tmp/ct/apple.jpg
+apple
+[pid: 2209|app: 0|req: 4/19] 222.173.104.238 () {42 vars in 733 bytes} [Thu Apr 13 15:08:15 2023] POST /upload => generated 275 bytes in 1875 msecs (HTTP/1.1 200) 6 headers in 242 bytes (17 switches on core 1)
+[pid: 2211|app: 0|req: 11/20] 222.173.104.238 () {36 vars in 641 bytes} [Thu Apr 13 15:08:17 2023] GET /tmp/ct/apple.jpg => generated 48167 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 237 bytes (1 switches on core 0)
+[pid: 2209|app: 0|req: 5/21] 222.173.104.238 () {36 vars in 645 bytes} [Thu Apr 13 15:08:17 2023] GET /tmp/draw/apple.jpg => generated 58811 bytes in 0 msecs (HTTP/1.1 200) 6 headers in 237 bytes (1 switches on core 0)
+2023-04-13 15:09:13.957883 person.png
+Fusing layers... 
+./tmp/ct/person.png
+person
+libpng warning: iCCP: cHRM chunk does not match sRGB
+[pid: 2211|app: 0|req: 12/22] 222.173.104.238 () {42 vars in 734 bytes} [Thu Apr 13 15:09:13 2023] POST /upload => generated 318 bytes in 1459 msecs (HTTP/1.1 200) 6 headers in 242 bytes (38 switches on core 1)
+[pid: 2211|app: 0|req: 13/23] 222.173.104.238 () {36 vars in 643 bytes} [Thu Apr 13 15:09:15 2023] GET /tmp/ct/person.png => generated 891221 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 0)
+2023-04-13 15:09:47.918083 apple.jpg
+Fusing layers... 
+./tmp/ct/apple.jpg
+apple
+[pid: 2211|app: 0|req: 14/24] 222.173.104.238 () {42 vars in 733 bytes} [Thu Apr 13 15:09:47 2023] POST /upload => generated 275 bytes in 1884 msecs (HTTP/1.1 200) 6 headers in 242 bytes (15 switches on core 0)
+[pid: 2211|app: 0|req: 15/25] 138.68.56.8 () {22 vars in 224 bytes} [Thu Apr 13 15:56:59 2023] GET / => generated 227 bytes in 1 msecs (HTTP/1.0 302) 7 headers in 285 bytes (1 switches on core 1)
+2023-04-13 17:55:35.970293 orange.jpg
+Fusing layers... 
+./tmp/ct/orange.jpg
+orange
+[pid: 2211|app: 0|req: 16/26] 222.173.104.238 () {42 vars in 756 bytes} [Thu Apr 13 17:55:35 2023] POST /upload => generated 283 bytes in 1849 msecs (HTTP/1.1 200) 6 headers in 242 bytes (10 switches on core 1)
+[pid: 2211|app: 0|req: 17/27] 222.173.104.238 () {36 vars in 640 bytes} [Thu Apr 13 17:55:37 2023] GET /tmp/ct/orange.jpg => generated 75569 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 237 bytes (1 switches on core 0)
+[pid: 2210|app: 0|req: 6/28] 222.173.104.238 () {36 vars in 644 bytes} [Thu Apr 13 17:55:37 2023] GET /tmp/draw/orange.jpg => generated 168720 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 0)
+2023-04-13 21:29:34.994223 orange01.jpg
+Fusing layers... 
+./tmp/ct/orange01.jpg
+orange01
+[pid: 2210|app: 0|req: 7/29] 222.173.104.238 () {42 vars in 754 bytes} [Thu Apr 13 21:29:34 2023] POST /upload => generated 560 bytes in 2042 msecs (HTTP/1.1 200) 6 headers in 242 bytes (10 switches on core 1)
+[pid: 2209|app: 0|req: 6/30] 222.173.104.238 () {36 vars in 647 bytes} [Thu Apr 13 21:29:37 2023] GET /tmp/draw/orange01.jpg => generated 197994 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 18/31] 222.173.104.238 () {36 vars in 643 bytes} [Thu Apr 13 21:29:37 2023] GET /tmp/ct/orange01.jpg => generated 78587 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 237 bytes (1 switches on core 0)
+2023-04-13 21:33:21.574593 orange.jpg
+Fusing layers... 
+./tmp/ct/orange.jpg
+orange
+[pid: 2211|app: 0|req: 19/32] 222.173.104.238 () {42 vars in 754 bytes} [Thu Apr 13 21:33:21 2023] POST /upload => generated 283 bytes in 2821 msecs (HTTP/1.1 200) 6 headers in 242 bytes (8 switches on core 1)
+[pid: 2211|app: 0|req: 20/33] 222.173.104.238 () {36 vars in 639 bytes} [Thu Apr 13 21:33:24 2023] GET /tmp/ct/orange.jpg => generated 75569 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 237 bytes (1 switches on core 0)
+[pid: 2210|app: 0|req: 8/34] 222.173.104.238 () {36 vars in 643 bytes} [Thu Apr 13 21:33:24 2023] GET /tmp/draw/orange.jpg => generated 167374 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 238 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 21/35] 205.210.31.6 () {26 vars in 544 bytes} [Fri Apr 14 03:30:34 2023] GET / => generated 227 bytes in 28 msecs (HTTP/1.1 302) 7 headers in 285 bytes (1 switches on core 1)
+[pid: 2210|app: 0|req: 9/36] 205.210.31.6 () {28 vars in 620 bytes} [Fri Apr 14 03:30:34 2023] GET /static/index.html => generated 207 bytes in 24 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 22/37] 198.235.24.139 () {26 vars in 533 bytes} [Fri Apr 14 04:59:18 2023] GET / => generated 227 bytes in 0 msecs (HTTP/1.0 302) 7 headers in 285 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 23/38] 192.155.88.231 () {30 vars in 339 bytes} [Fri Apr 14 06:19:03 2023] GET / => generated 227 bytes in 1 msecs (HTTP/1.1 302) 7 headers in 285 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 24/39] 45.79.181.94 () {30 vars in 435 bytes} [Fri Apr 14 09:30:18 2023] GET / => generated 227 bytes in 1 msecs (HTTP/1.1 302) 7 headers in 285 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 25/40] 60.255.160.190 () {46 vars in 695 bytes} [Fri Apr 14 12:52:18 2023] POST /webapi/encryption.cgi => generated 207 bytes in 2 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 26/41] 60.255.160.190 () {46 vars in 695 bytes} [Fri Apr 14 12:56:23 2023] POST /webapi/encryption.cgi => generated 207 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 27/42] 60.255.160.190 () {46 vars in 695 bytes} [Fri Apr 14 13:01:21 2023] POST /webapi/encryption.cgi => generated 207 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 28/43] 60.255.160.190 () {46 vars in 695 bytes} [Fri Apr 14 13:06:11 2023] POST /webapi/encryption.cgi => generated 207 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 29/44] 60.255.160.190 () {46 vars in 695 bytes} [Fri Apr 14 13:11:02 2023] POST /webapi/encryption.cgi => generated 207 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 30/45] 60.255.160.190 () {46 vars in 695 bytes} [Fri Apr 14 13:16:23 2023] POST /webapi/encryption.cgi => generated 207 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 31/46] 60.255.160.190 () {46 vars in 695 bytes} [Fri Apr 14 13:21:10 2023] POST /webapi/encryption.cgi => generated 207 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 32/47] 60.255.160.190 () {46 vars in 695 bytes} [Fri Apr 14 13:26:29 2023] POST /webapi/encryption.cgi => generated 207 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 33/48] 60.255.160.190 () {46 vars in 695 bytes} [Fri Apr 14 13:31:13 2023] POST /webapi/encryption.cgi => generated 207 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 34/49] 60.255.160.190 () {46 vars in 695 bytes} [Fri Apr 14 13:36:25 2023] POST /webapi/encryption.cgi => generated 207 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 35/50] 60.255.160.190 () {46 vars in 695 bytes} [Fri Apr 14 13:41:24 2023] POST /webapi/encryption.cgi => generated 207 bytes in 11 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 36/51] 60.255.160.190 () {46 vars in 695 bytes} [Fri Apr 14 13:46:22 2023] POST /webapi/encryption.cgi => generated 207 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 37/52] 60.255.160.190 () {46 vars in 695 bytes} [Fri Apr 14 13:51:26 2023] POST /webapi/encryption.cgi => generated 207 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 38/53] 60.255.160.190 () {46 vars in 695 bytes} [Fri Apr 14 13:56:21 2023] POST /webapi/encryption.cgi => generated 207 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 39/54] 60.255.160.190 () {46 vars in 695 bytes} [Fri Apr 14 14:00:42 2023] POST /webapi/encryption.cgi => generated 207 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 40/55] 60.255.160.190 () {46 vars in 695 bytes} [Fri Apr 14 14:05:47 2023] POST /webapi/encryption.cgi => generated 207 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 41/56] 205.210.31.145 () {26 vars in 546 bytes} [Fri Apr 14 14:44:42 2023] GET / => generated 227 bytes in 0 msecs (HTTP/1.1 302) 7 headers in 285 bytes (1 switches on core 1)
+[pid: 2209|app: 0|req: 7/57] 205.210.31.145 () {28 vars in 622 bytes} [Fri Apr 14 14:44:43 2023] GET /static/index.html => generated 207 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 257 bytes (1 switches on core 0)
