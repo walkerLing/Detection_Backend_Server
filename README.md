@@ -1,4 +1,4 @@
-# Detection_Backend_Server,
+# Detection_Backend_Server
 
 #### 介绍
 这是本项目的目标检测模型服务的相关部署文件
